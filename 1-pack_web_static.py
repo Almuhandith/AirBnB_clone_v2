@@ -6,6 +6,7 @@ import os
 
 
 def do_pack():
+    """Generate an tgz archive from web_static folder"""
     try:
         if not os.path.exists("versions"):
             local('mkdir -p versions')
